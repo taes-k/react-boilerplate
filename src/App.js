@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-import './App.css';
-import Todo from "./Components/TodoComponent"
+import { Route } from "react-router-dom";
+import { Home, Todo } from "./pages";
 
 class App extends Component{
     render (){
         return (
-            <div className="App">
-                <p>React Todolist</p>
-
-                <Todo text="Webpack 설치"/>
-                <Todo text="Babel 설치"/>
-                <Todo text="React 설치"/>
-                <Todo text="Redux 설치"/>
+            <div>
+                <Route exact path="/" component={Home}/>
+                <Route path="/todo/:title" component={Todo}/>
+                <Route exact path="/todo" component={Todo}/>
             </div>
         );
     }

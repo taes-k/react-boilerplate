@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "build": "webpack --mode production NODE_PATH=src ",
+    "start": "webpack-dev-server --mode development --open NODE_PATH=src "
   },
   "author": "taes-k",
   "license": "ISC",
@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "react-redux": "^7.0.2",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "redux": "^4.0.1"
   }
 }

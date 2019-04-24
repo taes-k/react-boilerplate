@@ -23,5 +23,10 @@ module.exports = {
             template: "./src/template/index.html",
             filename: "./index.html"
         })
-    ]
+    ],
+    devServer: {
+        inline: true,
+        port: 7777,
+        historyApiFallback: true
+    },
 };
