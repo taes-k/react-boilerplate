@@ -16,41 +16,40 @@ src/
 ㄴ index.css
 ㄴ App.js
 ㄴ client
-  ㄴ Root.js           => react-router, redux store 설정
+  ㄴ Root.js : react-router, redux store 설정
 ㄴ page
-  ㄴ index.js        => page 통합 export
+  ㄴ index.js : page 통합 export
   ㄴ Home.js
   ㄴ Home.css
   ㄴ Todo.js
   ㄴ Todo.css
-ㄴ components        => componenet
+ㄴ components : componenet
   ㄴ TodoComponent.js
-ㄴ store             => redux store module
+ㄴ store : redux store module
   ㄴ modules     
     ㄴ index.js
     ㄴ todo.js
 ㄴ template
   ㄴ index.html      
-.babelrc            => babel 설정파일
+.babelrc : babel 설정파일
 package-lock.json   
 package.json
-webpack.config.js   => webpack 설정파일
+webpack.config.js : webpack 설정파일
 ```
 
 ## 렌더링 과정
-```c
-src/index.js
 
-src/client/Root.js : redux store, router setting
+`src/index.js`  
 
-src/App.js : router detail setting
+`src/client/Root.js`  
 
-src/page/Home.js
+`src/App.js`  
 
-src/components/TodoComponent.js
-```
+`src/page/Home.js`  
+
+`src/components/TodoComponent.js`  
 
 ## script
-`npm run start` : react 시작
+`npm run start` : react 시작  
 `npm run build` : build 
 
